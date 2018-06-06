@@ -32,22 +32,20 @@ class Empresa extends CI_Controller
 
         include('ValidaCPFCNPJ.php');                          // inclui o controller ValidaCPFCNPJ
 
-        $dadosForm['nome'] = $this->input->post('InputName');
-        $dadosForm['CPF'] = $this->input->post('InputCPF');
-        $dadosForm['email'] = $this->input->post('InputEmail');
-        $dadosForm['tel'] = $this->input->post('InputTel');
-        $dadosForm['endereco'] = $this->input->post('InputEnd');
-        $dadosForm['cidade'] = $this->input->post('InputCid');
-        $dadosForm['site'] = $this->input->post('InputSite');
-
-        $cpfaux = $this->input->post('InputCPF');
+        $dadosEmp['nome'] = $this->input->post('InputName');
+        $dadosEmp['CPF'] = $this->input->post('InputCPF');
+        $dadosEmp['email'] = $this->input->post('InputEmail');
+        $dadosEmp['tel'] = $this->input->post('InputTel');
+        $dadosEmp['endereco'] = $this->input->post('InputEnd');
+        $dadosEmp['cidade'] = $this->input->post('InputCid');
+        $dadosEmp['site'] = $this->input->post('InputSite');
 
         // criptografar a senha antes de enserir do db
         // $senha = $this->input->post('InputSenha');
-        // $dadosVaga['senha'] = md5($this->senha);
+        // $dadosEmp['senha'] = md5($senha);
 
+        $cpfaux = $this->input->post('InputCPF');
         $cpf_cnpj_v = $this->input->post('InputCPF');
-
 
         $vcpfo = new ValidaCPFCNPJ($cpf_cnpj_v);         // Cria um objeto sobre a classe
 
@@ -58,15 +56,14 @@ class Empresa extends CI_Controller
             $this->load->model('userdbmodel');
             $dbo = new UserDBModel();
 
-            $auxQuery =  $dbo->cadastrarEnpresa($dadosForm);
-            $dados2Form['cpf'] = $cpfaux;
+            $auxQuery =  $dbo->cadastrarEnpresa($dadosEmp);
 
             if ($auxQuery == true){
                 //sleep(3);
+                $dados2Form['cpf'] = $cpfaux;
                 $this->load->view('BaseTemplates/header_template');
                 $this->load->view('vj_pages/page_cadastro_vaga', $dados2Form);
                 $this->load->view('BaseTemplates/footer_template');
-               //redirect('pages/view/page_cadastro_vaga/1', $dadosForm);   // sucesso
             }
 
         }else{
