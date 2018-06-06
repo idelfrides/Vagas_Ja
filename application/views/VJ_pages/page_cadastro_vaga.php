@@ -24,14 +24,14 @@
                         <div class="form-group col-6">
                             <label for="InputTipVaga">*Tipo da vaga:</label>
                             <select name="InputTipVaga" class="form-control" id="InputTipVaga" required>
-                                <option value="1">Estagio</option>
-                                <option value="2">Emprego</option>
-                                <option value="3">Treinee</option>
+                                <option value="estagio">Estagio</option>
+                                <option value="emprego">Emprego</option>
+                                <option value="treinee">Treinee</option>
                             </select>
                         </div>
                         <div class="form-group col-3">
                             <label for="InputCPF">*Cargo:</label>
-                            <input type="text" class="form-control" name="InputCPF" id="InputCPF" placeholder="Informe o cargo..." required>
+                            <input type="text"  class="form-control" name="InputCargo" id="InputCPF" placeholder="Informe o cargo..." required>
                         </div>
                         <div class="form-group col-3">
                             <label for="InputCPF">Seu CPF:</label>
@@ -41,8 +41,8 @@
 
                     <div class="row">
                         <div class="form-group col-12">
-                            <label for="desc">*Descrição da Oportunidade</label>
-                            <textarea name="desc" class="form-control" id="desc" rows="3" required></textarea>
+                            <label for="InputDesc">*Descrição da Oportunidade</label>
+                            <textarea name="InputDesc" class="form-control" id="InputDesc" rows="3" required></textarea>
                         </div>
                     </div>
 
@@ -64,7 +64,7 @@
                         <div class="form-group col-3">
                             <label for="InputCid">*Cidade:</label>
                             <select name="InputCid" class="form-control" id="InputCid" required>
-                                <option value="1">Sobral</option>
+                                <option value="Sobral">Sobral</option>
                             </select>
                         </div>
                     </div>

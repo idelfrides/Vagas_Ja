@@ -58,12 +58,13 @@ class Empresa extends CI_Controller
             $this->load->model('userdbmodel');
             $dbo = new UserDBModel();
 
-            $aux =  $dbo->cadastrarEnpresa($dadosForm);
-            $dadosForm2['cpf'] = $cpfaux;
+            $auxQuery =  $dbo->cadastrarEnpresa($dadosForm);
+            $dados2Form['cpf'] = $cpfaux;
 
-            if ($aux == true){
+            if ($auxQuery == true){
+                //sleep(3);
                 $this->load->view('BaseTemplates/header_template');
-                $this->load->view('vj_pages/page_cadastro_vaga', $dadosForm2);
+                $this->load->view('vj_pages/page_cadastro_vaga', $dados2Form);
                 $this->load->view('BaseTemplates/footer_template');
                //redirect('pages/view/page_cadastro_vaga/1', $dadosForm);   // sucesso
             }
@@ -76,17 +77,17 @@ class Empresa extends CI_Controller
     public function cadastroVaga(){
 
         $dadosVaga['tipo_oportuidade'] = $this->input->post('InputTipVaga');
-        $dadosVaga['cargo'] = $this->input->post('InputCPF');
-        $dadosVaga['descricao_oportunidade'] = $this->input->post('desc');
+        $dadosVaga['cargo'] = $this->input->post('InputCargo');
+        //$dadosVaga['cpf'] = $this->input->post('InputCPF');
+        $dadosVaga['descricao_oportunidade'] = $this->input->post('InputDesc');
         $dadosVaga['area_atuacao'] = $this->input->post('InputAreAtuacao');
-        $dadosVaga['perfil'] = 'inteligent';
+        $dadosVaga['perfil'] = 'eu coloquei inteligent';
         $dadosVaga['num_vagas'] = $this->input->post('InputNumVagas');
         $dadosVaga['cidade'] = $this->input->post('InputCid');
 
         $this->load->model('userdbmodel');
         $dbo = new UserDBModel();
         $dbo->cadastrarVaga($dadosVaga);
-
     }
 
 }

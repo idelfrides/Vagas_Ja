@@ -34,7 +34,7 @@ class UserDBModel extends CI_Model
         if ($query){
             return true;
         }else{
-            redirect('main/view/page_cadastro_vaga/3');    // erro ao inserir dados na tabela empresario
+            redirect('pages/view/page_cadastro_vaga/3');    // erro ao inserir dados na tabela empresario
         }
     }
 
@@ -45,7 +45,7 @@ class UserDBModel extends CI_Model
         if ($query){
             redirect('pages/view/page_cadastro_vaga/1');   // sucesso
         }else{
-            redirect('main/view/page_cadastro_vaga/3');    // erro ao inserir dados na tabela postagem
+            redirect('pages/view/page_cadastro_vaga/3');    // erro ao inserir dados na tabela postagem
         }
     }
 
