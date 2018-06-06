@@ -40,9 +40,15 @@ class Empresa extends CI_Controller
         $dadosEmp['cidade'] = $this->input->post('InputCid');
         $dadosEmp['site'] = $this->input->post('InputSite');
 
+        
+        /* --------------------------------------------------------
+                OBS: NÃO APAGAR AS LINHAS COMENTADASA ABAIXO
+          --------------------------------------------------------*/
         // criptografar a senha antes de enserir do db
         // $senha = $this->input->post('InputSenha');
+        // $senha2 = (string)$this->input->post('InputSenha');
         // $dadosEmp['senha'] = md5($senha);
+
 
         $cpfaux = $this->input->post('InputCPF');
         $cpf_cnpj_v = $this->input->post('InputCPF');
