@@ -41,15 +41,6 @@ class Pages extends CI_Controller{
         }
     }
 
-    public function dbManag(){
-        $this->load->model('userdbmodel');
-        $usr = new UserDBModel();
-        print_r($usr->getUser('obama'));
-        print_r($usr->getUser(''));
-        print_r($usr->getUser('wm'));
-    }
-
-
     public function cadastroEnpresario(){
 
         $this->load->model('empresa');
