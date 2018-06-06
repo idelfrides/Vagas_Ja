@@ -1,0 +1,13 @@
+HOST: localhost
+
+DB: VagaJaDB
+
+USER: root
+
+PASSWORD:	
+
+
+-----------------------------------------------------------
+Link de configuração de banco de dados no phpStorm 
+
+https://www.jetbrains.com/help/phpstorm/connecting-to-a-database.html#mysql
