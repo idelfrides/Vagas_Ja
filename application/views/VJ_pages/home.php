@@ -1,31 +1,5 @@
 
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="author" content="Idelfrides Jorge and Eric Vinícius">
-    <meta name="description" content="Atividade 02 da disciplina Tecnologias Web - Criar um site usando Bootstrap 4.0">
-    <meta name="keywords" content="HTML,CSS,Bootstrap 4, jQuery">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!--  bootstrap css -->
-    <link rel="stylesheet" href="<?=base_url("estatico/css/bootstrap.min.css");?>">
-    <link rel="stylesheet" href="<?=base_url("Assets/_css/meu-estilo.css");?>">
-
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
-
-    <!-- jQuery library -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
-    <!-- Popper JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
-
-    <!-- Latest compiled JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
-
-</head>
-<br><br>
-
 <div>
     <?= anchor("pages/view/vagas", 'TESTE ANCHOR', "class = 'btn btn-primary'"); ?>
 </div>
