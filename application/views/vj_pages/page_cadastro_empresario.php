@@ -67,7 +67,7 @@
                         </div>
                     </div>
                     <div class="row col-12 mx-auto  pt-5">
-                        <button type="submit" class="btn col-4 mx-auto mb-5">Cadastrar</button>
+                        <button type="submit" class="btn col-4 mx-auto mb-5 btn-info">Cadastrar</button>
                     </div>
                 </div>
             </form>

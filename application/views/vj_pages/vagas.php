@@ -23,7 +23,7 @@
                 card section goes here
 **************************************************************** -->
 <div class="title-content-page" id="bg-card">
-    <div class="container-fluid pb-5">
+    <div class="container-fluid pb-5 pt-5">
         <div class="row">
 
             <ul class="list-group col-10  mx-auto">

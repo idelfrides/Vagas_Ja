@@ -3,7 +3,6 @@
       some features of index.html  file - main lyout page
  --------------------------------------------------------------*/
 
-
 ol li:hover {
   background-color: #6f42c1;
   color: white;
@@ -63,7 +62,6 @@ ol li:hover {
   font-size: 1.8rem;
 }
 
-
 strong {
   color: #19C1C3;
 }
@@ -90,9 +88,13 @@ button {
   vertical-align: center;
 }
 
-.carouselSite{
-    max-width: 100%;
-    height: 500px;
-    background: url("../_images/slide-02.jpg") no-repeat top center;
-
+.carouselSite {
+  max-width: 100%;
+  height: 500px;
+  background: url("../_images/slide-02.jpg") no-repeat top center;
 }
+
+.bg-jc {
+  background-color: rgba(230, 216, 200, 0.85)
+}
+

@@ -24,11 +24,11 @@
     <meta name="keywords" content="HTML,CSS,Bootstrap 4, jQuery">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link rel="shortcut icon" type="image/x-icon" href="<?=base_url("index.php/Assets/_images/favicon.png");?> ">
+    <link rel="shortcut icon" href="<?=base_url('Assets/_images/favicon.png');?>">
 
     <!--  bootstrap css -->
-    <link rel="stylesheet" href="<?=base_url("index.php/Assets/_css/bootstrap.min.css");?>">
-    <link rel="stylesheet" href="<?=base_url("index.php/Assets/_css/meu-estilo.css");?>">
+    <link rel="stylesheet" href="<?=base_url("Assets/_css/bootstrap.min.css");?>">
+    <link rel="stylesheet" href="<?=base_url("Assets/_css/meu-estilo.css");?>">
 
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
@@ -50,12 +50,12 @@
 <!-- **************** navbar ******************* -->
 <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: #346d8d;">
     <div class="container">
-        <a href="<?=base_url("index.php/pages/view/home");?>" id="home-style">
+        <a href="<?=base_url("pages/view/home");?>" id="home-style">
             <img id="icon-home" src="<?=base_url("Assets/_images/home.png");?>" width="40" height="40" title="Home" style="background-color: transparent;">
         </a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;       
 
         <a class="navbar-brand h1 mb-0" id="time" data-toggle="tooltip" title=""
-           href="#">TIME &nbsp;|
+           href="<?=base_url("pages/view/home");?>">TIME &nbsp;|
         </a>
 
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSite">
@@ -68,19 +68,20 @@
                     <a class="nav-link text-lg-center text-white text-uppercase" href="<?=base_url("pages/view/page_cadastro_empresario");?>">Cadastrar Vaga</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-lg-center text-white text-uppercase" href="<?=base_url("pages/view/vagas");?>">Ver Vagas</a>
+                    <a class="nav-link text-lg-center text-white text-uppercase" href="<?=base_url("pages/view/vagas");?>">Vagas</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-lg-center text-white text-uppercase" href="<?=base_url("pages/view/vagas");?>">Candidatar a Vagas</a>
+                    <a class="nav-link text-lg-center text-white text-uppercase" href="#">Candidatar a Vagas</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-lg-center text-white text-uppercase" href="#">Contato</a>
+                    <a class="nav-link text-lg-center text-white text-uppercase mr-5" href="#">Contato</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-lg-center text-white text-uppercase ml-5" href="<?=base_url("pages/view/login");?>">Login</a>
                 </li>
             </ul>
         </div>
     </div>
 </nav>
 
-<br><br>
-<br>
 

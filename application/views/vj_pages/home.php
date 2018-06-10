@@ -1,9 +1,5 @@
 
 
-<div>
-    <?= anchor("pages/view/vagas", 'TESTE ANCHOR', "class = 'btn btn-primary'"); ?>
-</div>
-
 <!-- CAROUSEL-->
 <div id="carouselSite" class="carousel slide pt-5" data-ride="carousel">
 
@@ -17,7 +13,7 @@
     <!-- The slideshow -->
     <div class="carousel-inner">
         <div class="carousel-item active">
-            <img src="../../../Assets/_images/slide-01.jpg" class="img-fluid d-block" alt="Alternative text for slide 1">
+            <img src="<?=base_url("Assets/_images/slide-01.jpg");?>" class="img-fluid d-block" alt="Alternative text for slide 1">
             <div class="carousel-caption d-none d-md-block mb-5">
                 <h5 class="text-dark text-uppercase">Encontre sua vaga de uma forma fácil.</h5>
             </div>

@@ -12,7 +12,6 @@
     <!-- ***************************************************************
                        Form vagas
     **************************************************************** -->
-    <br>
     <div class="title-content-page mt-5 pt-3" id="bg-card">
         <div class="container pb-5">
             <div class="row col-12">
@@ -35,7 +34,7 @@
                         </div>
                         <div class="form-group col-3">
                             <label for="InputCPF">Seu CPF:</label>
-                            <input type="text" class="form-control" name="InputCPF" id="InputCPF" value="<?php echo $cpf; ?>" placeholder="CPF cadastrado">
+                            <input type="text" class="form-control" name="InputCPF" id="InputCPF" value="<?php //echo $cpf; ?>" placeholder="CPF cadastrado">
                         </div>
                     </div>
 

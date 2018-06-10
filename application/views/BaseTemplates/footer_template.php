@@ -12,8 +12,8 @@
 
 
     <div class="bg-dark">
-        <div class="col-12  py-1">
-            <div class="mybordercopy"></div>
+        <div class="col-12  py-1 pt-3">
+            
             <blockquote class="blockquote text-center text-white">
                 <footer>Copyright &copy;&nbsp;2018 &nbsp;|&nbsp; Todos os direitos reservados.</footer>
             </blockquote>

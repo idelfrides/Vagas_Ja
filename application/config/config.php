@@ -23,7 +23,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | a PHP script and you can easily do that on your own.
 |
 */
-//$config['base_url'] = '';
 $config['base_url'] = 'http://localhost/Vagas_Ja/';
 
 /*
@@ -37,7 +36,6 @@ $config['base_url'] = 'http://localhost/Vagas_Ja/';
 |
 */
 $config['index_page'] = 'index.php';
-//$config['index_page'] = '';
 
 /*
 |--------------------------------------------------------------------------
@@ -54,7 +52,7 @@ $config['index_page'] = 'index.php';
 |
 | WARNING: If you set this to 'PATH_INFO', URIs will always be URL-decoded!
 */
-$config['uri_protocol']	= 'REQUEST_URI'; //A        UTO
+$config['uri_protocol']	= 'REQUEST_URI';
 
 /*
 |--------------------------------------------------------------------------
