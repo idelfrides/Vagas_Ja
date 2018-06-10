@@ -65,21 +65,21 @@
         <div class="collapse navbar-collapse">
             <ul class="navbar-nav mr-auto" id="navbarSite2">
                 <li class="nav-item">
-                    <a class="nav-link text-lg-center text-white text-uppercase" href="<?=base_url("pages/view/page_cadastro_empresario");?>">Cadastrar Vaga</a>
+                    <a class="nav-link text-lg-center text-white text-uppercase" href="<?=base_url("pages/view/login");?>">Cadastrar Vaga</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-lg-center text-white text-uppercase" href="<?=base_url("pages/view/vagas");?>">Vagas</a>
+                    <a class="nav-link text-lg-center text-white text-uppercase" href="<?=base_url("pages/view/vagas");?>">Vagas Disponíveis</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link text-lg-center text-white text-uppercase" href="#">Candidatar a Vagas</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-lg-center text-white text-uppercase mr-5" href="#">Contato</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-lg-center text-white text-uppercase ml-5" href="<?=base_url("pages/view/login");?>">Login</a>
-                </li>
-            </ul>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a class="nav-link text-lg-center text-white text-uppercase btn btn-outline-success" href="<?=base_url("pages/view/login");?>">Login</a>
+                    </li>
+                    <li>
+                        <a class="nav-link text-lg-center text-white text-uppercase btn btn-outline-info ml-2" href="<?=base_url("pages/view/pre_cadastro");?>">Cadastrar-me</a>
+                    </li>
+                </ul>
+            
         </div>
     </div>
 </nav>
