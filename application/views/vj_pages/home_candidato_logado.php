@@ -43,28 +43,13 @@
     </a>
 </div>
 
-<!-- Title page -->
-<div class="container" id="lorem">
-    <div class="row">
-        <div class="col-8 mx-auto  col-sm-12 text-center my-5 col-sm-6 col-md-8">
-            <h1 class="display-3 text-muted">Vagas Já!</h1><br>
-            <p> O site criado para lhe colcocar em uma vaga de emprego o máis rápido possível.
-                <strong> Lhe tirar dessa crise é o nosso objetivo!</strong> Aqui Você divulga seu currículo, e todos os Patrões de Sobral que estiverem cadastrado no site podem ter acesso a ele, E lhe contratar facinho \o/.
-                <br><br><strong>Cadastre-se e seja contratado!</strong>
-            </p>
-        </div>
-    </div>
-</div>
-
-<div class="myborder"></div>
-
 <!-- ***************************************************************
                 card section goes here
 **************************************************************** -->
-<div class="title-content-page" id="bg-card">
+<div class="title-content-page mt-2" >
     <div class="container-fluid pb-5">
         <div class="row">
-            <h3 class="display-4 mx-auto">Vagas</h3>
+            <h3 class="display-4 mx-auto pt-5">Vagas</h3>
         </div>
         <div class="row">
 
@@ -78,8 +63,9 @@
                             </span>
                     </div>
                     <div class="badge">
-                        <a href="<?=base_url("pages/view/login");?>">
-                            <button class="btn btn-info">Inscrever-se</button>
+                        <a href="#">
+                            <button class="btn btn-info"><img height="15px" src="<?=base_url('')?>Assets/_images/check.svg"> Candidatar-me</button> 
+                            <button class="btn btn-danger" disabled><img height="15px" src="<?=base_url('')?>Assets/_images/uncheck.svg"> Descandidatar</button>
                         </a>
                     </div>
 
@@ -93,8 +79,9 @@
                             </span>
                     </div>
                     <div class="badge">
-                        <a href="<?=base_url("pages/view/login");?>">
-                            <button class="btn btn-info">Inscrever-se</button>
+                        <a href="#">
+                            <button class="btn btn-info"><img height="15px" src="<?=base_url('')?>Assets/_images/check.svg"> Candidatar-me</button> 
+                            <button class="btn btn-danger" disabled><img height="15px" src="<?=base_url('')?>Assets/_images/uncheck.svg"> Descandidatar</button>
                         </a>
                     </div>
 
@@ -108,8 +95,9 @@
                             </span>
                     </div>
                     <div class="badge">
-                        <a href="<?=base_url("pages/view/login");?>">
-                            <button class="btn btn-info">Inscrever-se</button>
+                        <a href="#">
+                            <button class="btn btn-info"><img height="15px" src="<?=base_url('')?>Assets/_images/check.svg"> Candidatar-me</button> 
+                            <button class="btn btn-danger" disabled><img height="15px" src="<?=base_url('')?>Assets/_images/uncheck.svg"> Descandidatar</button>
                         </a>
                     </div>
                 </li>

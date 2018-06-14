@@ -55,7 +55,7 @@
         </a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;       
 
         <a class="navbar-brand h1 mb-0" id="time" data-toggle="tooltip" title=""
-           href="<?=base_url("pages/view/home");?>">TIME &nbsp;|
+           href="<?=base_url("pages/view/home");?>">TIME
         </a>
 
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSite">
@@ -64,20 +64,12 @@
 
         <div class="collapse navbar-collapse">
             <ul class="navbar-nav mr-auto" id="navbarSite2">
-                <li class="nav-item">
-                    <a class="nav-link text-lg-center text-white text-uppercase" href="<?=base_url("pages/view/login");?>">Cadastrar Vaga</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-lg-center text-white text-uppercase" href="<?=base_url("pages/view/vagas");?>">Vagas</a>
-                </li>
+                
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a class="nav-link text-lg-center text-white text-uppercase btn btn-outline-success" href="<?=base_url("pages/view/login");?>">Login</a>
-                    </li>
-                    <li>
-                        <a class="nav-link text-lg-center text-white text-uppercase btn btn-outline-info ml-2" href="<?=base_url("pages/view/pre_cadastro");?>">Cadastrar-me</a>
-                    </li>
+                        <a class="nav-link text-lg-center text-white text-uppercase btn btn-outline-success" href="">Sair</a>
+                    </li>                    
                 </ul>
             
         </div>

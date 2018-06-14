@@ -43,31 +43,23 @@
     </a>
 </div>
 
-<!-- Title page -->
-<div class="container" id="lorem">
-    <div class="row">
-        <div class="col-8 mx-auto  col-sm-12 text-center my-5 col-sm-6 col-md-8">
-            <h1 class="display-3 text-muted">Vagas Já!</h1><br>
-            <p> O site criado para lhe colcocar em uma vaga de emprego o máis rápido possível.
-                <strong> Lhe tirar dessa crise é o nosso objetivo!</strong> Aqui Você divulga seu currículo, e todos os Patrões de Sobral que estiverem cadastrado no site podem ter acesso a ele, E lhe contratar facinho \o/.
-                <br><br><strong>Cadastre-se e seja contratado!</strong>
-            </p>
-        </div>
-    </div>
-</div>
-
-<div class="myborder"></div>
-
 <!-- ***************************************************************
                 card section goes here
 **************************************************************** -->
-<div class="title-content-page" id="bg-card">
-    <div class="container-fluid pb-5">
+<div class="title-content-page mt-1" >
+    <div class="container-fluid pb-5" id="bg-card">
         <div class="row">
-            <h3 class="display-4 mx-auto">Vagas</h3>
+            <h3 class="display-4 mx-auto pt-5">Gerenciar Vagas</h3>
+        </div>
+        <div class="row my-3">
+            <div class="mx-auto  text-center col-12">
+                <a  href="<?=base_url('pages/view/page_cadastro_vaga')?>" class="btn btn-success col-2"><img height="15px" src="<?=base_url()?>Assets/_images/plus.svg"> <strong style="color:#ffffff" >Cadastrar Vaga</strong></a>
+            </div>
+            
+            
         </div>
         <div class="row">
-
+            
             <ul class="list-group col-10  mx-auto">
                 <li class="list-group-item list-group-item-white d-flex justify-content-between align-items-center">
                     <div>
@@ -78,8 +70,10 @@
                             </span>
                     </div>
                     <div class="badge">
-                        <a href="<?=base_url("pages/view/login");?>">
-                            <button class="btn btn-info">Inscrever-se</button>
+                        <a href="#">
+                            <button class="btn btn-info"><img height="15px" src="<?=base_url('')?>Assets/_images/view.svg"> Visualizar Candidatos</button> 
+                            <button class="btn btn-warning"><img height="15px" src="<?=base_url('')?>Assets/_images/edit.svg"> Editar</button>
+                            <button class="btn btn-danger"><img height="15px" src="<?=base_url('')?>Assets/_images/uncheck.svg"> Remover</button>
                         </a>
                     </div>
 
@@ -93,8 +87,10 @@
                             </span>
                     </div>
                     <div class="badge">
-                        <a href="<?=base_url("pages/view/login");?>">
-                            <button class="btn btn-info">Inscrever-se</button>
+                        <a href="#">
+                            <button class="btn btn-info"><img height="15px" src="<?=base_url('')?>Assets/_images/view.svg"> Visualizar Candidatos</button> 
+                            <button class="btn btn-warning"><img height="15px" src="<?=base_url('')?>Assets/_images/edit.svg"> Editar</button>
+                            <button class="btn btn-danger"><img height="15px" src="<?=base_url('')?>Assets/_images/uncheck.svg"> Remover</button>
                         </a>
                     </div>
 
@@ -108,8 +104,10 @@
                             </span>
                     </div>
                     <div class="badge">
-                        <a href="<?=base_url("pages/view/login");?>">
-                            <button class="btn btn-info">Inscrever-se</button>
+                        <a href="#">
+                            <button class="btn btn-info"><img height="15px" src="<?=base_url('')?>Assets/_images/view.svg"> Visualizar Candidatos</button> 
+                            <button class="btn btn-warning"><img height="15px" src="<?=base_url('')?>Assets/_images/edit.svg"> Editar</button>
+                            <button class="btn btn-danger"><img height="15px" src="<?=base_url('')?>Assets/_images/uncheck.svg"> Remover</button>
                         </a>
                     </div>
                 </li>
@@ -117,7 +115,3 @@
         </div>
     </div>
 </div>
-
-
-<br><br><br>
-<br><br><br>

@@ -17,7 +17,7 @@ class Pages extends CI_Controller{
         }
 
         $data['title'] = ucfirst($page);                                // Capitalize
-
+        
         $this->load->view('BaseTemplates/header_template', $data);      // carrega o header
         $this->alertMsg($status);                                       // exibe uma mensagem de alerta
         $this->load->view('vj_pages/'.$page, $data);                    // carrega a página solicitada
