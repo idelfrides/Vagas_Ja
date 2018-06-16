@@ -41,12 +41,12 @@
                     <div class="row">
                         <div class="form-group col-6">
                             <label for="InputEmail">E-mail:</label>
-                            <input type="email" class="form-control" name="InputEmail" id="InputEmail" placeholder="Ex:teste@vagasja.com">
+                            <input type="email" class="form-control" name="InputEmail" id="InputEmail" placeholder="Ex:teste@vagasja.com" required>
                         </div>
                     
                         <div class="form-group col-6">
                             <label for="InputTel">Telefone*:</label>
-                            <input type="text" class="form-control" name="InputTel" id="InputTel" placeholder="Digite seu Telefone." required>
+                            <input type="text" class="form-control" name="InputTel" pattern=".{9}" title="Deve conter 9 caracteres" id="InputTel" placeholder="Digite seu Telefone." required>
                         </div>
                     </div>
                     <div class="row">
@@ -54,7 +54,7 @@
                         <div class="form-group col-6">
                             
                             <label for="InputSenha">Senha*:</label>
-                            <input type="password" class="form-control" name="InputSenha" id="InputSenha" placeholder="**********" required>
+                            <input type="password" class="form-control" name="InputSenha" id="InputSenha" pattern=".{8}" title="Deve conter no mínimo 8 caracteres" placeholder="**********" required>
                         </div>
                         </div>
                     </div>

@@ -34,7 +34,7 @@
                         </div>
                         <div class="form-group col-3">
                             <label for="InputCPF">Seu CPF:</label>
-                            <input type="text" class="form-control" name="InputCPF" id="InputCPF" value="<?php //echo $cpf; ?>" placeholder="CPF cadastrado">
+                            <input type="text" class="form-control" required name="InputCPF" id="InputCPF" value="<?php //echo $cpf; ?>" placeholder="CPF cadastrado">
                         </div>
                     </div>
 
@@ -57,7 +57,7 @@
 
                         <div class="form-group col-3">
                             <label for="InputNumVagas">*Número de Vagas:</label>
-                            <input type="text" name="InputNumVagas" class="form-control" id="InputNumVagas" placeholder="..." required>
+                            <input type="number" name="InputNumVagas" class="form-control"  id="InputNumVagas" placeholder="..." required>
                         </div>
 
                         <div class="form-group col-3">

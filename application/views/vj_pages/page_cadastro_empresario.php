@@ -39,7 +39,7 @@
                         </div>
                         <div class="form-group col-3">
                             <label for="InputSenha">Senha*:</label>
-                            <input type="password" class="form-control" name="InputSenha" id="InputSenha" placeholder="*********" required>
+                            <input type="password" class="form-control" pattern=".{8,}" title="Deve conter no mínimo 8 caracteres" name="InputSenha" id="InputSenha" placeholder="*********" required>
                         </div>
                     </div>
                     <div class="row">
@@ -63,7 +63,7 @@
                     
                         <div class="form-group col-3">
                             <label for="InputTel">Telefone*:</label>
-                            <input type="text" class="form-control" name="InputTel" id="InputTel" placeholder="Digite seu Telefone." required>
+                            <input type="text" class="form-control" pattern=".{9}" title="Deve conter 9 caracteres" name="InputTel" id="InputTel" placeholder="Digite seu Telefone." required>
                         </div>
                     </div>
                     <div class="row col-12 mx-auto  pt-5">

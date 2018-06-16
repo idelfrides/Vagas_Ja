@@ -12,15 +12,19 @@
                         <fieldset>
             
                             <div class="form-group ls-login-user">
-                                <label for="userLogin">Usuário</label>
-                                <input class="form-control ls-login-bg-user input-lg" id="userLogin" type="text" aria-label="Usuário" placeholder="Usuário">
+                                <label for="userLogin">E-mail</label>
+                                <input class="form-control ls-login-bg-user input-lg" required  id="userLogin" type="email" aria-label="Usuário" placeholder="Usuário">
                             </div>
             
                             <div class="form-group ls-login-password">
                                 <label for="userPassword">Senha</label>
-                                <input class="form-control ls-login-bg-password input-lg" id="userPassword" type="password" aria-label="Senha" placeholder="Senha">
+                                <input class="form-control ls-login-bg-password input-lg" pattern=".{8,}" title="Sua senha deve conter mais de 8 caracteres" id="userPassword" type="password" aria-label="Senha" placeholder="Senha">
                             </div>
-            
+                            <div class="row mx-auto mb-4">
+                                <label class="radio-inline mr-2 mx-auto"><input type="radio" name="tipoUser" value="adm" checked>Admin</label>
+                                <label class="radio-inline mr-2 mx-auto"><input type="radio" name="tipoUser" value="empresario">Empresário</label>
+                                <label class="radio-inline mr-2 mx-auto"><input type="radio" name="tipoUser" value="candidato">Candidato</label>
+                            </div>
                             
             
                             <input type="submit" value="Entrar" class="btn btn-info btn-lg btn-block col-9 mx-auto">
